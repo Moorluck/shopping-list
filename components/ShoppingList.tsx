@@ -127,13 +127,10 @@ export default function ShoppingList() {
               {items.map((item) => (
                 <li
                   key={item.id}
-                  className="p-4 flex items-center justify-between hover:bg-gray-50"
+                  className="pl-4 flex items-center justify-between hover:bg-gray-50"
                 >
                   <div className="flex-1">
                     <p className="text-gray-900">{item.text}</p>
-                    <p className="text-sm text-gray-500">
-                      Ajouté le {new Date(item.createdAt).toLocaleString()}
-                    </p>
                   </div>
                   <button
                     onClick={() => deleteItem(item.id)}
