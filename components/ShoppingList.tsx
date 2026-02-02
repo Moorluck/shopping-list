@@ -1,7 +1,7 @@
 'use client';
 
+import { ShoppingListItem } from '@/app/services/shopping-list-service';
 import { useState, useEffect } from 'react';
-import { ShoppingListItem } from '../app/api/shopping-list/route';
 
 export default function ShoppingList() {
   const [items, setItems] = useState<ShoppingListItem[]>([]);
